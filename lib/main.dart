@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+import 'package:navigaton_screen/Screen/login_screen.dart';
+
+import 'Screen/reg_screen.dart';
+void main(){
+  runApp(Myapp());
+}
+class Myapp extends StatelessWidget {
+  const Myapp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(debugShowCheckedModeBanner: false,
+      home:LoginScreen() ,
+    );
+  }
+}
+
+
