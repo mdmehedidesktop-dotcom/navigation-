@@ -35,12 +35,18 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     padding: EdgeInsets.all(4),
                     decoration: BoxDecoration(color: Color(0XFFFF5722),
                       shape: BoxShape.circle,
-                      border: Border.all(color:Colors.white,width: 2)
+                      border: Border.all(color:Colors.white,width: 2),
+
                     ),
+                    child: Text("?",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 12),),
                   ),
                 )
               ],
-            )
+            ),
+            SizedBox(height: 20,),
+            Text("Forgot Password ?",style: TextStyle(fontSize: 24,color: Colors.black),),
+            Text("Don't worry! It happens. please enter your registered phone number of email address",
+            style: TextStyle(fontSize: 12,color: Colors.grey),)
           ],
         ),
       ),)),
