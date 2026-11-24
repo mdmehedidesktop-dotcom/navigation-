@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigaton_screen/Screen/forgot_password.dart';
 import 'package:navigaton_screen/Screen/login_screen.dart';
 
 import 'Screen/reg_screen.dart';
@@ -11,7 +12,7 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false,
-      home:LoginScreen() ,
+      home:ForgotPassword() ,
     );
   }
 }
