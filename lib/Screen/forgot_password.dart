@@ -57,9 +57,10 @@ class _ForgotPasswordState extends State<ForgotPassword> {
              Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Remember your password ?")
+                Text("Remember your password ?"),
+                Text("Login",style: TextStyle(color: Color(0XFFD327F5)),)
               ],
-                         )
+             )
           ],
         ),
       ),)),
