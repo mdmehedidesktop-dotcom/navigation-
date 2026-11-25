@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../custome widget/Custtom text field.dart';
 class ForgotPassword extends StatefulWidget {
   const ForgotPassword({super.key});
 
@@ -46,7 +48,8 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             SizedBox(height: 20,),
             Text("Forgot Password ?",style: TextStyle(fontSize: 24,color: Colors.black),),
             Text("Don't worry! It happens. please enter your registered phone number of email address",
-            style: TextStyle(fontSize: 12,color: Colors.grey),)
+            style: TextStyle(fontSize: 12,color: Colors.grey),),
+            MyTextField(email: TextEditingController(), hint: 'phone number', mLine: 1, icon: Icons.contact_phone, suffixIcon: null,),
           ],
         ),
       ),)),
