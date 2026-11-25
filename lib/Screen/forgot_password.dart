@@ -52,7 +52,13 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             style: TextStyle(fontSize: 12,color: Colors.grey),),
             MyTextField(email: TextEditingController(), hint: 'phone number', mLine: 1, icon: Icons.contact_phone, suffixIcon: null,),
             SizedBox(height: 30,),
-            CusttomButton(color: Colors.orange, onTap: () {  }, title: 'Send OTP', height:60, width: 300, textColor: Colors.white,)
+            CusttomButton(color: Colors.orange, onTap: () {  }, title: 'Send OTP', height:60, width: 300, textColor: Colors.white,),
+            SizedBox(height: 20,),
+            Row(
+              children: [
+                Text("Remember your password ?")
+              ],
+            )
           ],
         ),
       ),)),
