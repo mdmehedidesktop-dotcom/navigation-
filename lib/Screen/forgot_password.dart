@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../custome widget/Custtom button.dart';
 import '../custome widget/Custtom text field.dart';
 class ForgotPassword extends StatefulWidget {
   const ForgotPassword({super.key});
@@ -50,6 +51,8 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             Text("Don't worry! It happens. please enter your registered phone number of email address",
             style: TextStyle(fontSize: 12,color: Colors.grey),),
             MyTextField(email: TextEditingController(), hint: 'phone number', mLine: 1, icon: Icons.contact_phone, suffixIcon: null,),
+            SizedBox(height: 30,),
+            CusttomButton(color: Colors.orange, onTap: () {  }, title: 'Send OTP', height:60, width: 300, textColor: Colors.white,)
           ],
         ),
       ),)),
