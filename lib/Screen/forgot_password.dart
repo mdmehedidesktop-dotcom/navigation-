@@ -54,11 +54,12 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             SizedBox(height: 30,),
             CusttomButton(color: Colors.orange, onTap: () {  }, title: 'Send OTP', height:60, width: 300, textColor: Colors.white,),
             SizedBox(height: 20,),
-            Row(
+             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text("Remember your password ?")
               ],
-            )
+                         )
           ],
         ),
       ),)),
