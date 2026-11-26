@@ -64,6 +64,14 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                   child: Center(
                     child: Text("Phone",style: TextStyle(fontSize: 18),),
                   ),
+                )),
+                SizedBox(width: 15,),
+                Expanded(child: Container(
+                  height: 55,
+                  decoration: BoxDecoration(
+                      color:Colors.grey.shade300 ,
+                  borderRadius: BorderRadius.circular(15),
+                  ),
                 ))
               ],
               
