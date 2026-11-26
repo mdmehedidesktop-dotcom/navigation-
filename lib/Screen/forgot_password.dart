@@ -72,6 +72,9 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                       color:Colors.grey.shade300 ,
                   borderRadius: BorderRadius.circular(15),
                   ),
+                  child: Center(
+                    child: Text("Email",style: TextStyle(fontSize: 18),),
+                  ),
                 ))
               ],
               
