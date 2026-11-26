@@ -51,6 +51,24 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             Text("Don't worry! It happens. please enter your registered phone number of email address",
             style: TextStyle(fontSize: 12,color: Colors.grey),),
             SizedBox(height: 20,),
+            Row(
+              children: [
+                Expanded(child: Container(
+                  height: 55,
+                  width: 60,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.orange),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: Center(
+                    child: Text("Phone",style: TextStyle(fontSize: 18),),
+                  ),
+                ))
+              ],
+              
+            ),
+            
             MyTextField(email: TextEditingController(), hint: 'phone number', mLine: 1, icon: Icons.contact_phone, suffixIcon: null,),
             SizedBox(height: 30,),
             CusttomButton(color: Colors.orange, onTap: () {  }, title: 'Send OTP', height:60, width: 300, textColor: Colors.white,),
