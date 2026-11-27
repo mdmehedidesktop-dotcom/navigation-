@@ -88,7 +88,9 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text("Remember your password ?"),
-                Text("Login",style: TextStyle(color: Color(0XFFD327F5)),)
+                InkWell(
+                    onTap: (){},
+                    child: Text("Login",style: TextStyle(color: Color(0XFFD327F5)),))
               ],
              )
           ],
