@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../custome widget/Custtom button.dart';
 import '../custome widget/Custtom text field.dart';
+import 'login_screen.dart';
 class ForgotPassword extends StatefulWidget {
   const ForgotPassword({super.key});
 
@@ -89,7 +90,9 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               children: [
                 Text("Remember your password ?"),
                 InkWell(
-                    onTap: (){},
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>LoginScreen()));
+                    },
                     child: Text("Login",style: TextStyle(color: Color(0XFFD327F5)),))
               ],
              )
