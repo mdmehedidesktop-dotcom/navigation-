@@ -56,7 +56,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   InkWell(
-                    onTap: (){
+                    onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>ForgotPassword()));
                     },
                       child: Text("Forgot password ?",style: TextStyle(color: Colors.deepOrangeAccent),))
                 ],
