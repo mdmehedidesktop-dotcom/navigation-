@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:navigaton_screen/Screen/forgot_password.dart';
 import 'package:navigaton_screen/Screen/reg_screen.dart';
 
 import '../custome widget/Custtom button.dart';
@@ -54,7 +55,10 @@ class _LoginScreenState extends State<LoginScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Text("Forgot password ?",style: TextStyle(color: Colors.deepOrangeAccent),)
+                  InkWell(
+                    onTap: (){
+                    },
+                      child: Text("Forgot password ?",style: TextStyle(color: Colors.deepOrangeAccent),))
                 ],
               ),
               SizedBox(height: 10,),
